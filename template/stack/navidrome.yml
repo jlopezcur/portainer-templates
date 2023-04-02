@@ -1,0 +1,18 @@
+version: "3.9"
+services:
+  kavita:
+    image: deluan/navidrome:latest
+    container_name: navidrome
+    user: 1000:1000
+    volumes:
+      - ${LIBRARY}:/music:ro
+      - /portainer/Files/AppData/Config/Navidrome:/data
+    environment:
+      - ND_SCANSCHEDULE: 1h
+      - ND_LOGLEVEL: info
+      - ND_SESSIONTIMEOUT: 24h
+      - ND_BASEURL: ""
+    ports:
+      - ${PORT}:4533
+    restart: unless-stopped
+

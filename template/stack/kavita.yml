@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  kavita:
+    image: kizaing/kavita:latest
+    container_name: kavita
+    volumes:
+      - ${LIBRARY}:/books
+      - /portainer/Files/AppData/Config/Kavita:/kavita/config
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TZ=${TZ}
+    ports:
+      - ${PORT}:5000
+    restart: unless-stopped

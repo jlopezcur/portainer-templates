@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  kavita:
+    image: b4bz/homer:latest
+    container_name: homer
+    volumes:
+      - /portainer/Files/AppData/Config/Homer:/www/assets
+    ports:
+      - ${PORT}:8080
+    restart: unless-stopped
+
