@@ -1,7 +1,7 @@
 version: '3.9'
 services:
   stump:
-    image: aaronleopold/stump
+    image: aaronleopold/stump-preview
     container_name: stump
     # Replace my paths (prior to the colons) with your own
     volumes:
