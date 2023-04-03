@@ -213,6 +213,39 @@
       },
       "title": "Stump",
       "type": 3
+    },
+    {
+      "categories": [
+        "Audiobooks",
+        "Podcasts"
+      ],
+      "description": "Self-hosted audiobook and podcast server",
+      "env": [
+        {
+          "default": "13378",
+          "label": "PORT",
+          "name": "PORT"
+        },
+        {
+          "default": "/media/audiobooks",
+          "label": "LIBRARY",
+          "name": "LIBRARY"
+        },
+        {
+          "default": "/media/podcasts",
+          "label": "PODCASTS",
+          "name": "PODCASTS"
+        }
+      ],
+      "logo": "https://raw.githubusercontent.com/jlopezcur/portainer-templates/master/assets/logos/audiobookshelf.png",
+      "name": "audiobookshelf",
+      "platform": "linux",
+      "repository": {
+        "stackfile": "template/stack/audiobookshelf.yml",
+        "url": "https://github.com/jlopezcur/portainer-templates"
+      },
+      "title": "Audiobookshelf",
+      "type": 3
     }
   ]
 }

@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  audiobookshelf:
+    image: ghcr.io/advplyr/audiobookshelf:latest
+    container_name: audiobookshelf
+    volumes:
+      - ${LIBRARY}:/audiobooks
+      - ${PODCASTS}:/podcasts
+      - /portainer/apps/config/audiobookshelf:/config
+      - /portainer/apps/metadata/audiobookshelf:/metadata
+    ports:
+      - ${PORT}:80
+    restart: unless-stopped
