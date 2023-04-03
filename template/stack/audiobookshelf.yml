@@ -6,8 +6,8 @@ services:
     volumes:
       - ${LIBRARY}:/audiobooks
       - ${PODCASTS}:/podcasts
-      - /portainer/apps/config/audiobookshelf:/config
-      - /portainer/apps/metadata/audiobookshelf:/metadata
+      - /portainer/apps/audiobookshelf/config:/config
+      - /portainer/apps/audiobookshelf/metadata:/metadata
     ports:
       - ${PORT}:80
     restart: unless-stopped

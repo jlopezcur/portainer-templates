@@ -6,7 +6,7 @@ services:
     volumes:
       - ${SERIES}:/data/series
       - ${MOVIES}:/data/movies
-      - /portainer/Files/AppData/Config/Jellyfin:/config
+      - /portainer/apps/jellyfin/config:/config
     environment:
       - PUID=${PUID}
       - PGID=${PGID}
@@ -21,7 +21,7 @@ services:
     container_name: radarr
     volumes:
       - ${MOVIES}:/movies
-      - /portainer/Files/AppData/Config/Radarr:/config
+      - /portainer/apps/radarr/config:/config
     environment:
       - PUID=${PUID}
       - PGID=${PGID}
@@ -35,7 +35,7 @@ services:
     container_name: sonarr
     volumes:
       - ${SERIES}:/movies
-      - /portainer/Files/AppData/Config/Sonarr:/config
+      - /portainer/apps/sonarr/config:/config
     environment:
       - PUID=${PUID}
       - PGID=${PGID}
@@ -49,7 +49,7 @@ services:
     container_name: jackett
     volumes:
       - /media/torrents:/downloads
-      - /portainer/Files/AppData/Config/Jackett:/config
+      - /portainer/apps/jackett/config:/config
     environment:
       - PUID=${PUID}
       - PGID=${PGID}
@@ -68,7 +68,7 @@ services:
       - TZ=${TZ}
       - WEBUI_PORT=8091
     volumes:
-      - /portainer/Files/AppData/Config/Qbittorrent:/config
+      - /portainer/apps/qbittorrent/config:/config
       - /media:/downloads
     ports:
       - 8091:8091

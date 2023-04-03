@@ -6,7 +6,7 @@ services:
     user: 1000:1000
     volumes:
       - ${LIBRARY}:/music:ro
-      - /portainer/Files/AppData/Config/Navidrome:/data
+      - /portainer/apps/navidrome/config:/data
     environment:
       - ND_SCANSCHEDULE: 1h
       - ND_LOGLEVEL: info

@@ -24,6 +24,7 @@ Using [linuxserver.io](https://www.linuxserver.io/) (when available).
 
 - [Homer](https://github.com/bastienwirtz/homer)
 - [Kavita](https://github.com/Kareadita/Kavita)
+- [Stump](https://github.com/aaronleopold/stump)
 - [Jellyfin](https://github.com/jellyfin)
   - [Radarr](https://github.com/Radarr/Radarr)
   - [Sonarr](https://github.com/Sonarr/Sonarr)
@@ -31,6 +32,12 @@ Using [linuxserver.io](https://www.linuxserver.io/) (when available).
   - [qBitTorrent](https://github.com/qbittorrent/qBittorrent)
 - [navidrome](https://github.com/navidrome/navidrome)
 - [nextcloud](https://github.com/nextcloud)
+- [audiobookshelf](https://github.com/advplyr/audiobookshelf)
+
+## Where is the configuration?
+
+All the configuration files is under the path `/portainer/apps/*/config` and
+other metadata and stuff like that is also under the same structure.
 
 ## References
 
