@@ -184,6 +184,35 @@
       },
       "title": "Navidrome",
       "type": 3
+    },
+    {
+      "categories": [
+        "Books",
+        "Manga",
+        "Comics"
+      ],
+      "description": "Free, open source, self-hosting for all your comic books, manga and digital book collections. Supports the most popular reading formats.",
+      "env": [
+        {
+          "default": "10801",
+          "label": "PORT",
+          "name": "PORT"
+        },
+        {
+          "default": "/media/books",
+          "label": "LIBRARY",
+          "name": "LIBRARY"
+        }
+      ],
+      "logo": "https://raw.githubusercontent.com/jlopezcur/portainer-templates/master/assets/logos/stump.png",
+      "name": "stump",
+      "platform": "linux",
+      "repository": {
+        "stackfile": "template/stack/stump.yml",
+        "url": "https://github.com/jlopezcur/portainer-templates"
+      },
+      "title": "Stump",
+      "type": 3
     }
   ]
 }
