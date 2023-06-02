@@ -246,6 +246,47 @@
       },
       "title": "Audiobookshelf",
       "type": 3
+    },
+    {
+      "categories": [
+        "erp",
+        "financial accounting",
+        "order mangement",
+        "hr and payroll",
+        "manufacturing",
+        "crm",
+        "projects",
+        "helpdesk",
+        "asset management",
+        "web pages"
+      ],
+      "description": "ERPNext is the world's best free and open source ERP",
+      "env": [
+        {
+          "default": "13378",
+          "label": "PORT",
+          "name": "PORT"
+        },
+        {
+          "default": "/media/audiobooks",
+          "label": "LIBRARY",
+          "name": "LIBRARY"
+        },
+        {
+          "default": "/media/podcasts",
+          "label": "PODCASTS",
+          "name": "PODCASTS"
+        }
+      ],
+      "logo": "https://raw.githubusercontent.com/jlopezcur/portainer-templates/master/assets/logos/erpnext.png",
+      "name": "erpnext",
+      "platform": "linux",
+      "repository": {
+        "stackfile": "template/stack/erpnext.yml",
+        "url": "https://github.com/jlopezcur/portainer-templates"
+      },
+      "title": "ERPNext",
+      "type": 3
     }
   ]
 }
