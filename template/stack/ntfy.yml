@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   ntfy:
-    image: binwiederhier/ntfy
+    image: binwiederhier/ntfy:v2.6.0
     container_name: ntfy
     command:
       - serve
