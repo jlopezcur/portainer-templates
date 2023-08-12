@@ -33,7 +33,7 @@
       "platform": "linux",
       "repository": {
         "stackfile": "Template/Stack/nextcloud.yml",
-        "url": "https://github.com/Qballjos/portainer_templates"
+        "url": "https://github.com/jlopezcur/portainer_templates"
       },
       "title": "Nextcloud",
       "type": 3
