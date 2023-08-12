@@ -2,41 +2,30 @@
   "version": "2",
   "templates": [
     {
-      "categories": [
-        "Cloud",
-        "Productivity",
-        "Tools",
-        "Other",
-        "Web"
-      ],
+      "categories": ["Notifications", "Tools"],
+      "description": "Push notifications made easy",
+      "env": [{ "default": 80, "label": "PORT", "name": "PORT" }],
+      "logo": "https://raw.githubusercontent.com/jlopezcur/portainer-templates/master/assets/logos/ntfy.svg",
+      "name": "ntfy",
+      "platform": "linux",
+      "repository": {
+        "stackfile": "Template/Stack/ntfy.yml",
+        "url": "https://github.com/jlopezcur/portainer_templates"
+      },
+      "title": "NTFY",
+      "type": 3
+    },
+
+    {
+      "categories": ["Cloud", "Productivity", "Tools", "Other", "Web"],
       "description": "Where are your photos and documents? With Nextcloud you pick a server of your choice, at home, in a data center or at a provider. And that is where your files will be. Nextcloud runs on that server, protecting your data and giving you access from your desktop or mobile devices.",
       "env": [
-        {
-          "default": "1000",
-          "label": "PUID",
-          "name": "PUID"
-        },
-        {
-          "default": "100",
-          "label": "PGID",
-          "name": "PGID"
-        },
-        {
-          "label": "TZ",
-          "name": "TZ"
-        },
-        {
-          "label": "DATABASE_PASSWORD",
-          "name": "DATABASE_PASSWORD"
-        },
-        {
-          "label": "MYSQL_ROOT_PASSWORD",
-          "name": "MYSQL_ROOT_PASSWORD"
-        },
-        {
-          "label": "PORT",
-          "name": "PORT"
-        }
+        { "default": "1000", "label": "PUID", "name": "PUID" },
+        { "default": "100", "label": "PGID", "name": "PGID" },
+        { "label": "TZ", "name": "TZ" },
+        { "label": "DATABASE_PASSWORD", "name": "DATABASE_PASSWORD" },
+        { "label": "MYSQL_ROOT_PASSWORD", "name": "MYSQL_ROOT_PASSWORD" },
+        { "label": "PORT", "name": "PORT" }
       ],
       "logo": "https://raw.githubusercontent.com/jlopezcur/portainer-templates/master/assets/logos/nextcloud.png",
       "name": "nextcloud",
@@ -49,40 +38,16 @@
       "title": "Nextcloud",
       "type": 3
     },
+
     {
-      "categories": [
-        "Cloud",
-        "Books",
-        "Manga",
-        "Comics"
-      ],
+      "categories": ["Cloud", "Books", "Manga", "Comics"],
       "description": "Kavita is a fast, feature rich, cross platform reading server. Built with a focus for manga and the goal of being a full solution for all your reading needs. Setup your own server and share your reading collection with your friends and family.",
       "env": [
-        {
-          "default": "1000",
-          "label": "PUID",
-          "name": "PUID"
-        },
-        {
-          "default": "100",
-          "label": "PGID",
-          "name": "PGID"
-        },
-        {
-          "default": "Europe/Madrid",
-          "label": "TZ",
-          "name": "TZ"
-        },
-        {
-          "default": "8081",
-          "label": "PORT",
-          "name": "PORT"
-        },
-        {
-          "default": "/media/books",
-          "label": "LIBRARY",
-          "name": "LIBRARY"
-        }
+        { "default": "1000", "label": "PUID", "name": "PUID" },
+        { "default": "100", "label": "PGID", "name": "PGID" },
+        { "default": "Europe/Madrid", "label": "TZ", "name": "TZ" },
+        { "default": "8081", "label": "PORT", "name": "PORT" },
+        { "default": "/media/books", "label": "LIBRARY", "name": "LIBRARY" }
       ],
       "logo": "https://raw.githubusercontent.com/jlopezcur/portainer-templates/master/assets/logos/kavita.svg",
       "name": "kavita",
@@ -95,39 +60,16 @@
       "title": "Kavita",
       "type": 3
     },
+
     {
-      "categories": [
-        "Video",
-        "Music",
-        "Photos"
-      ],
+      "categories": ["Video", "Music", "Photos"],
       "description": "Jellyfin is a Free Software Media System that puts you in control of managing and streaming your media. It is an alternative to the proprietary Emby and Plex, to provide media from a dedicated server to end-user devices via multiple apps.",
       "env": [
-        {
-          "default": "1000",
-          "label": "PUID",
-          "name": "PUID"
-        },
-        {
-          "default": "100",
-          "label": "PGID",
-          "name": "PGID"
-        },
-        {
-          "default": "Europe/Madrid",
-          "label": "TZ",
-          "name": "TZ"
-        },
-        {
-          "default": "/media/series",
-          "label": "SERIES",
-          "name": "SERIES"
-        },
-        {
-          "default": "/media/movies",
-          "label": "MOVIES",
-          "name": "MOVIES"
-        }
+        { "default": "1000", "label": "PUID", "name": "PUID" },
+        { "default": "100", "label": "PGID", "name": "PGID" },
+        { "default": "Europe/Madrid", "label": "TZ", "name": "TZ" },
+        { "default": "/media/series", "label": "SERIES", "name": "SERIES" },
+        { "default": "/media/movies", "label": "MOVIES", "name": "MOVIES" }
       ],
       "logo": "https://raw.githubusercontent.com/jlopezcur/portainer-templates/master/assets/logos/jellyfin.png",
       "name": "jellyfin",
@@ -140,19 +82,11 @@
       "title": "Jellyfin, Radarr, Sonarr, Jackett, qBitTorrent",
       "type": 3
     },
+
     {
-      "categories": [
-        "Dashboard",
-        "Homepage"
-      ],
+      "categories": ["Dashboard", "Homepage"],
       "description": "A dead simple static HOMepage for your servER to keep your services on hand, from a simple yaml configuration",
-      "env": [
-        {
-          "default": "8080",
-          "label": "PORT",
-          "name": "PORT"
-        }
-      ],
+      "env": [{ "default": "8080", "label": "PORT", "name": "PORT" }],
       "logo": "https://raw.githubusercontent.com/jlopezcur/portainer-templates/master/assets/logos/homer.png",
       "name": "homer",
       "platform": "linux",
@@ -163,18 +97,11 @@
       "title": "Homer",
       "type": 3
     },
+
     {
-      "categories": [
-        "Music"
-      ],
+      "categories": ["Music"],
       "description": "Modern Music Server and Streamer compatible with Subsonic/Airsoni",
-      "env": [
-        {
-          "default": "8083",
-          "label": "PORT",
-          "name": "PORT"
-        }
-      ],
+      "env": [{ "default": "8083", "label": "PORT", "name": "PORT" }],
       "logo": "https://raw.githubusercontent.com/jlopezcur/portainer-templates/master/assets/logos/navidrome.png",
       "name": "navidrome",
       "platform": "linux",
@@ -185,24 +112,13 @@
       "title": "Navidrome",
       "type": 3
     },
+
     {
-      "categories": [
-        "Books",
-        "Manga",
-        "Comics"
-      ],
+      "categories": ["Books", "Manga", "Comics"],
       "description": "Free, open source, self-hosting for all your comic books, manga and digital book collections. Supports the most popular reading formats.",
       "env": [
-        {
-          "default": "10801",
-          "label": "PORT",
-          "name": "PORT"
-        },
-        {
-          "default": "/media/books",
-          "label": "LIBRARY",
-          "name": "LIBRARY"
-        }
+        { "default": "10801", "label": "PORT", "name": "PORT" },
+        { "default": "/media/books", "label": "LIBRARY", "name": "LIBRARY" }
       ],
       "logo": "https://raw.githubusercontent.com/jlopezcur/portainer-templates/master/assets/logos/stump.png",
       "name": "stump",
@@ -214,18 +130,12 @@
       "title": "Stump",
       "type": 3
     },
+
     {
-      "categories": [
-        "Audiobooks",
-        "Podcasts"
-      ],
+      "categories": ["Audiobooks", "Podcasts"],
       "description": "Self-hosted audiobook and podcast server",
       "env": [
-        {
-          "default": "13378",
-          "label": "PORT",
-          "name": "PORT"
-        },
+        { "default": "13378", "label": "PORT", "name": "PORT" },
         {
           "default": "/media/audiobooks",
           "label": "LIBRARY",
@@ -247,6 +157,7 @@
       "title": "Audiobookshelf",
       "type": 3
     },
+
     {
       "categories": [
         "erp",
@@ -262,11 +173,7 @@
       ],
       "description": "ERPNext is the world's best free and open source ERP",
       "env": [
-        {
-          "default": "13378",
-          "label": "PORT",
-          "name": "PORT"
-        },
+        { "default": "13378", "label": "PORT", "name": "PORT" },
         {
           "default": "/media/audiobooks",
           "label": "LIBRARY",
